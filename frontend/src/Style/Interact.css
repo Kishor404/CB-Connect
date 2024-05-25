@@ -1,0 +1,118 @@
+:root{
+    --primary:#EEF5FF;
+    --secondary:#1D24CA;
+    --minimal:orange;
+    --text:black;
+}
+
+.Interact-Container{
+    background-color: var(--primary);
+    position: fixed;
+    top:10vh;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.Interact-L{
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.Interact-R{
+    width: 20%;
+    background-color: var(--secondary);
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.Interact-L button{
+    background-color: var(--secondary);
+    border: none;
+    width: 90%;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.msg{
+    background-color: #EEF5FF;
+    height: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    overflow-y: scroll;scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.msg::-webkit-scrollbar {
+    display: none;
+}
+.msginfo{
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 20px;
+    border-radius: 10px;
+    width: 90%;
+}
+.msgui{
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+.msgui input{
+    width: 70%;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+.msgui button{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.msg-co{
+    background-color: var(--secondary);
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.msgin{
+    display: flex;
+    justify-content: start;
+}
+.msgout{
+    display: flex;
+    justify-content: end;
+}

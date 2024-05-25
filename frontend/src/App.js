@@ -3,7 +3,8 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Navbar from "./Components/Navbar.js";
 import Footer from "./Components/Footer.js";
 
-import P1 from "./Page1.js";
+import Home from "./Home.js";
+import Interact from "./Interact.js";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Navbar/>
         <div className="Pages">
           <Routes>
-            <Route path="/" element={<P1/>}/>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/Home" element={<Home/>}/>
+            <Route path="/Interact" element={<Interact/>}/>
           </Routes>
         </div>
         <Footer/>

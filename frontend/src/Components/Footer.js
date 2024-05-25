@@ -2,7 +2,9 @@
 const Footer=()=>{
     return(
         <>
-            <p>Thank You !</p>
+            <div className="FOOTER">
+                <p>ZX 404</p>
+            </div>
         </>
     )
 }

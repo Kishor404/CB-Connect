@@ -6,6 +6,7 @@ const mongoose=require("mongoose")
 var cors = require('cors')
 
 const route1 = require("./routes/route1.js")
+const NewsRouter=require("./routes/NewsRoute.js")
 
 
 const port=process.env.PORT
@@ -20,6 +21,7 @@ app.use((req,res,next)=>{
 })
 
 app.use("/api1",route1)
+app.use("/News",NewsRouter)
 
 mongoose.connect(uri)
     .then(()=>{

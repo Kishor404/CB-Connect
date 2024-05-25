@@ -1,0 +1,35 @@
+/* NAVBAR */
+
+.NAVBAR{
+    height: 10vh;
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav-L img{
+    width: 50px;
+}
+.Nav-C{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav-R a,.Nav-C a{
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.FOOTER{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
