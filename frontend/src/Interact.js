@@ -1,24 +1,19 @@
 import "./Style/Interact.css"
 import SendIcon from '@mui/icons-material/Send';
 
+import InteractImg from "./assets/Interact.png"
+
 function Interact(){
     return(
         <>
             <section>
                 <div className="Interact-Container">
                     <div className="Interact-L">
-                        <button>
-                            <p><b>ZX 404</b></p>
-                            <p>Developer, CSBS</p>
-                        </button>
-                        <button>
-                            <p><b>Luna</b></p>
-                            <p>AI, CSBS</p>
-                        </button>
+                        <img src={InteractImg} alt="Banner"></img>
                     </div>
                     <div className="Interact-R">
                         <div className="msginfo">
-                            <p>ZX 404</p>
+                            <p>CSBS</p>
                         </div>
                         <div className="msg">
                             <div className="msgin">

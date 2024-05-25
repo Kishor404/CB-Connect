@@ -18,11 +18,10 @@
     padding: 20px;
 }
 .Interact-L{
-    background-color: white;
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
@@ -38,14 +37,8 @@
     flex-direction: column;
     border-radius: 20px;
 }
-.Interact-L button{
-    background-color: var(--secondary);
-    border: none;
-    width: 90%;
-    margin-top: 15px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
+.Interact-L img{
+    width: 100%;
 }
 
 .msg{
@@ -54,7 +47,8 @@
     border-radius: 10px;
     padding: 20px;
     width: 90%;
-    overflow-y: scroll;scrollbar-width: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
     -ms-overflow-style: none;
 }
 .msg::-webkit-scrollbar {

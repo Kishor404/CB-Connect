@@ -27,8 +27,9 @@ const Navbar=()=>{
                 <div className="Nav-C">
                     <Link to={"/Home"}>Home</Link>
                     <Link to={"/"}>About</Link>
+                    <Link to={"/Score"}>Score</Link>
                     <Link to={"/Interact"}>Interact</Link>
-                    <Link to={"/"}>Marks</Link>
+                    
                 </div>
                 <div className="Nav-R">
                     <Link to={"/"}>{NavBut}</Link>
