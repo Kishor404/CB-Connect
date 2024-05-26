@@ -1,6 +1,7 @@
 
 
 import { Link } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 // import Logo from "../assets/sample_img1.jpg";
 
@@ -8,12 +9,14 @@ import "../Style/Components.css"
 
 const Navbar=()=>{
 
-    var Login=false;
+    const LogId = Cookies.get('LogId');
+    const LogName = Cookies.get('LogName');
+
 
     var NavBut="Login"
 
-    if(Login){
-        NavBut="Name"
+    if(LogId){
+        NavBut=LogName
     }else{
         NavBut="Login"
     }
@@ -32,7 +35,7 @@ const Navbar=()=>{
                     
                 </div>
                 <div className="Nav-R">
-                    <Link to={"/"}>{NavBut}</Link>
+                    <Link to={"/Login"}>{NavBut}</Link>
                 </div>
             </div>
         </>

@@ -12,7 +12,7 @@ const LogModel=new Schema({
         type:String,
         require:true
     },
-    Password:{
+    DOB:{
         type:String,
         require:true
     },

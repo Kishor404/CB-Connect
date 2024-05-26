@@ -6,6 +6,7 @@ import Footer from "./Components/Footer.js";
 import Home from "./Home.js";
 import Interact from "./Interact.js";
 import Score from "./Score.js";
+import Log from "./Log.js";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/Home" element={<Home/>}/>
             <Route path="/Interact" element={<Interact/>}/>
             <Route path="/Score" element={<Score/>}/>
+            <Route path="/Login" element={<Log/>}/>
           </Routes>
         </div>
         <Footer/>
