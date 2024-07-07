@@ -48,3 +48,30 @@
 .Sign a{
     color:aqua;
 }
+
+
+.Logout-Container{
+    background-color: white;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.Logout-Img img{
+    width:200px;
+}
+.Logout{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    padding-bottom: 40px;
+}
+.Logout .loname{
+    font-size: 20pt;
+    margin-bottom: 0px;
+}

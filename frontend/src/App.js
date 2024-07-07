@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar.js";
 import Footer from "./Components/Footer.js";
 
 import Home from "./Home.js";
-import Interact from "./Interact.js";
 import Score from "./Score.js";
 import Log from "./Log.js";
 
@@ -17,7 +16,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Home" element={<Home/>}/>
-            <Route path="/Interact" element={<Interact/>}/>
+            <Route path="/About" element={<Home/>}/>
+            <Route path="/Contact" element={<Home/>}/>
             <Route path="/Score" element={<Score/>}/>
             <Route path="/Login" element={<Log/>}/>
           </Routes>

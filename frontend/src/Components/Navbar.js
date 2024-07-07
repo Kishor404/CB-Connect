@@ -29,9 +29,9 @@ const Navbar=()=>{
                 </div>
                 <div className="Nav-C">
                     <Link to={"/Home"}>Home</Link>
-                    <Link to={"/"}>About</Link>
+                    <Link to={"/About"}>About</Link>
                     <Link to={"/Score"}>Score</Link>
-                    <Link to={"/Interact"}>Interact</Link>
+                    <Link to={"/Contact"}>Contact</Link>
                     
                 </div>
                 <div className="Nav-R">

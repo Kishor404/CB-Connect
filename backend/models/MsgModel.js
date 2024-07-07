@@ -6,10 +6,11 @@ const Schema=mongoose.Schema
 const MsgModel=new Schema({
     From:{
         type:String,
-        required:true
+        required:true,
+        unique:true
     },
     Msg:{
-        type:[[String]],
+        type:String,
         required:true
     }
 },{timestamps:true})

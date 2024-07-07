@@ -7,9 +7,9 @@ const mongoose=require("mongoose")
 // CREATE
 
 const CreateLog=async (req,res)=>{
-    const {Name,StdReg,DOB,Phone}=req.body
+    const {Name,RegNo,DOB}=req.body
     try{
-        const data=await LogModel.create({Name,StdReg,DOB,Phone})
+        const data=await LogModel.create({Name,RegNo,DOB})
         res.status(200).json(data)
     }catch(err){
         res.status(400).json({error:err.message})

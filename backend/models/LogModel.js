@@ -8,15 +8,12 @@ const LogModel=new Schema({
         type:String,
         require:true
     },
-    StdReg:{
+    RegNo:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     DOB:{
-        type:String,
-        require:true
-    },
-    Phone:{
         type:String,
         require:true
     }

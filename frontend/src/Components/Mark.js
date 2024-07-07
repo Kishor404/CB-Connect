@@ -2,7 +2,7 @@ import "../Style/Score.css"
 
 function Marks(){
 
-    var Scores=[["1st Semester","IAT1",[["Tamil",90],["English",50]]],["2nd Semester","IAT1",[["Tamil",80],["English",80]]],["2nd Semester","Final",[["Intro to Artifical interlligence",80],["Mathematics",80]]]]
+    var Scores=[["1st Semester","IAT1",[["Tamil",90],["English",50]]],["2nd Semester","IAT1",[["Tamil",80],["English",80]]],["2nd Semester","Final",[["Artifical interlligence",80],["Mathematics",80]]]]
     return(
         <>
                 <div className="Mark-IO">
