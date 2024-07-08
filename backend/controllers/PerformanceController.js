@@ -1,4 +1,4 @@
-const MsgModel=require("../models/MsgModel.js")
+const PerformanceModel=require("../models/PerformanceModel.js")
 
 const mongoose=require("mongoose")
 
@@ -6,10 +6,10 @@ const mongoose=require("mongoose")
 
 // CREATE
 
-const CreateMsg=async (req,res)=>{
-    const {From,Msg}=req.body
+const CreatePerformance=async (req,res)=>{
+    const {RegNo,Score}=req.body
     try{
-        const data=await MsgModel.create({From,Msg})
+        const data=await PerformanceModel.create({RegNo,Score})
         res.status(200).json(data)
     }catch(err){
         res.status(400).json({error:err.message})
@@ -18,18 +18,18 @@ const CreateMsg=async (req,res)=>{
 
 // GET
 
-const GetMsg=async (req,res)=>{
-    const data=await MsgModel.find({})
+const GetPerformance=async (req,res)=>{
+    const data=await PerformanceModel.find({})
     res.status(200).json(data)
 }
-const GetMsgS=async (req,res)=>{
+const GetPerformanceS=async (req,res)=>{
     const {id}=req.params
     
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({Error:"No Such Data"})
     }
 
-    const data=await MsgModel.findById(id)
+    const data=await PerformanceModel.findById(id)
 
     if (!data){
         return res.status(404).json({Error:"No Such Data"})
@@ -40,14 +40,14 @@ const GetMsgS=async (req,res)=>{
 
 // PATCH
 
-const PatchMsg=async (req,res)=>{
+const PatchPerformance=async (req,res)=>{
     const {id}=req.params
     
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({Error:"No Such Data"})
     }
 
-    const data=await MsgModel.findOneAndUpdate({_id:id},{...req.body})
+    const data=await PerformanceModel.findOneAndUpdate({_id:id},{...req.body})
 
     if (!data){
         return res.status(404).json({Error:"No Such Data"})
@@ -57,14 +57,14 @@ const PatchMsg=async (req,res)=>{
 
 // DELETE
 
-const DeleteMsg=async (req,res)=>{
+const DeletePerformance=async (req,res)=>{
     const {id}=req.params
     
     if(!mongoose.Types.ObjectId.isValid(id)){
         return res.status(404).json({Error:"No Such Data"})
     }
 
-    const data=await MsgModel.findOneAndDelete({_id:id})
+    const data=await PerformanceModel.findOneAndDelete({_id:id})
 
     if (!data){
         return res.status(404).json({Error:"No Such Data"})
@@ -73,4 +73,4 @@ const DeleteMsg=async (req,res)=>{
 
 }
 
-module.exports={CreateMsg,GetMsg,GetMsgS,PatchMsg,DeleteMsg}
+module.exports={CreatePerformance,GetPerformance,GetPerformanceS,PatchPerformance,DeletePerformance}

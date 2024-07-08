@@ -1,6 +1,6 @@
 import "./Style/Log.css"
 import * as React from 'react';
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import Cookies from 'js-cookie';
 
 
