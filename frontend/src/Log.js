@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 
 function Log(){
 
-    var Lid=Cookies.get("LogId");
+    var Lid=Cookies.get("LogReg");
 
     if (!Lid) {
         const loginContainer = document.querySelector(".Login-Container");
@@ -51,12 +51,12 @@ function Log(){
         console.log(Reg,Pass)
         var log=false;
         for(let i=0; i<Log.length;i++){
-            if(Log[i].RegNo===Reg && Log[i].DOB===Pass){
+            if(Log[i][1]===Reg && Log[i][2]===Pass){
                 console.log("Welcome")
                 log=true
-                Cookies.set('LogId', Log[i]._id, { expires: 7 });
-                Cookies.set('LogName', Log[i].Name, { expires: 7 });
-                Cookies.set('LogReg', Log[i].RegNo, { expires: 7 });
+                Cookies.set('LogName', Log[i][0], { expires: 7 });
+                Cookies.set('LogReg', Log[i][1], { expires: 7 });
+                console.log(Cookies.get("LogName"))
             }
         }
         if(!log){

@@ -49,11 +49,13 @@ function Marks(){
 
     },[Performance,LogReg])
 
+    
+
     // var Scores=[["1st Semester","IAT1",[["Tamil",90],["English",50]]],["2nd Semester","IAT1",[["Tamil",80],["English",80]]],["2nd Semester","Final",[["Artifical interlligence",80],["Mathematics",80]]]]
     return(
         <>
                 <div className="Mark-IO">
-                    <p className="Mark-Tit">Performance</p>
+                    <p className="Mark-Tit">Academic Performance of {Cookies.get("LogName")}</p>
                     <div className="Mark-Container">
                     {Scores && Scores.map((score)=>(
                         <div className="Mark-Card">

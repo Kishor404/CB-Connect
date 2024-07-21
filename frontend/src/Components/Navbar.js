@@ -9,13 +9,13 @@ import "../Style/Components.css"
 
 const Navbar=()=>{
 
-    const LogId = Cookies.get('LogId');
+    const LogReg = Cookies.get('LogReg');
     const LogName = Cookies.get('LogName');
 
 
     var NavBut="Login"
 
-    if(LogId){
+    if(LogReg){
         NavBut=LogName
     }else{
         NavBut="Login"
@@ -29,8 +29,9 @@ const Navbar=()=>{
                 </div>
                 <div className="Nav-C">
                     <Link to={"/Home"}>Home</Link>
-                    <Link to={"/About"}>About</Link>
+                    <Link to={"/Article"}>Article</Link>
                     <Link to={"/Score"}>Score</Link>
+                    <Link to={"/About"}>About</Link>
                     <Link to={"/Contact"}>Contact</Link>
                     
                 </div>
